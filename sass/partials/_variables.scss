@@ -1,0 +1,71 @@
+/* Colors */
+$halfwhite: #dcdcdc;
+$topcolor1: #0b0b0b; //$halfwhite;//darken(#383d3f, 10%); //#bcbcbc;
+$topcolor2: #0b0b0b; //$halfwhite;//darken(#383d3f, 10%); //#bcbcbc;
+$topcolor3: #0b0b0b; //$halfwhite;//darken(#383d3f, 10%); //#bcbcbc;
+$topcolor4: #0b0b0b; //$halfwhite;//darken(#383d3f, 10%); //#bcbcbc;
+$topcolor5: #0b0b0b; //$halfwhite;//darken(#383d3f, 10%); //#bcbcbc;
+$topcolor6: #000; //$halfwhite;//darken(#383d3f, 10%); //#bcbcbc;
+$topwidth: 20%;
+$topheight: 4px;
+$padding: 20px;
+$links-font-size: 0.8em;
+
+//Carousel Navigation colors
+$car-color1: #00bcd4;
+$car-color2: #c52d2e;
+$car-color3: #8e4497;
+$car-color4: #C8C8A9;
+$car-color5: #83AF9B;
+
+// Breakpoint variables
+// ====================================================================
+$XS: 18em; // roughly speaking, around 288px wide with 16px body font
+$XSWidth: 100%;
+$XSFont: 2em;
+
+$S: 30em; // roughly speaking, around 480px wide with 16px body font
+$SWidth: 100%;
+$SFont: 1.5em;
+
+$M: 43em; // roughly speaking, around 688px wide with 16px body font
+$MWidth: 50%;
+$MFont: 1em;
+
+$L: 57em; // roughly speaking, around 912px wide with 16px body font
+$LWidth: 25%;
+$LFont: 1em;
+
+$XL: 72em; // roughly speaking, around 912px wide with 16px body font
+$XLWidth: 25%;
+$XLFont: 1.3em;
+
+$pinkish: #1c1c1c; //#b33f8e;
+$pinkish2: #ef3651;
+
+$pinkishbutton: #c84a9b;
+$black: #000000;
+$white: #ffffff;
+$blackshade: #383d3f;
+
+// Social Icons
+//=====================================================================
+
+$twitter: #55ACEE;
+$facebook: #3b5998;
+$googleplus: #C63D2D;
+$linkedin: #4875B4;
+$behance: #161616;
+$pinterest: #c12830;
+
+$linkpadding: 10px;
+$containerpadding: 40px;
+
+
+
+// Susy Variables
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 5em;            // each column is 5em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+$container-style: fluid;

@@ -1,0 +1,48 @@
+body {
+	background: $white;
+	font-family: "OpenSansLight";
+	position: relative;
+    background-image: image-url("LittleSnowHills.jpg");
+}
+
+body, html {
+}
+
+a, a:hover, a:active, a:focus { 
+	outline: 0;
+	border: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+::-moz-selection {
+    background: $pinkish;
+    text-shadow: none;
+}
+
+::selection {
+    background: $pinkish;
+    text-shadow: none;
+}
+
+ h1 {
+    padding: 0;
+	margin: 0;
+    font-size:3em;
+    color: $white;
+    @include single-transition(all, .3s, ease, 0s);
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+	font-size: 2em;
+    color:$white;
+    @include single-transition(all, .3s, ease, 0s);
+}
+
+p {
+	font-size: 1.4em;
+}

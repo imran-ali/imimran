@@ -1,0 +1,602 @@
+@import "susy";
+
+* {
+   
+}
+
+header {
+	@extend %clearfix;
+}
+
+
+.main-links {
+	display:block;
+	width:100%;
+	background-color:$black;
+
+	ul {
+		clear:both;
+	}
+	
+	li {
+		text-align:center;
+		font-size: $links-font-size;
+	}
+}
+
+
+.main-content {
+   //@include susy-grid-background;
+	position:relative;
+	width:100%;
+	@extend %clearfix;
+}
+
+.color-changer {
+    position: absolute;
+    width:50%;
+    left:0;
+    height:450px;
+    background-color: $white;
+    //background-color: darken($halfwhite,5%);
+    z-index:-9999;
+}
+
+.image-holder {
+    @extend %clearfix;
+    position:relative;
+    width:100%;
+    height:400px;
+}
+
+
+.image-div {
+    position: absolute; 
+    width: 400px; 
+    height: 400px;  
+    top: 10px;    
+    left: 50%;    
+    margin-left: -200px; 
+    /*background-image: image-url('me-01.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 10px;*/
+    img {
+        margin-top:30px;
+        width:100%;
+        height:100%;
+    }
+}
+
+.main-inner {
+    @extend %clearfix;
+    display: block;
+    position:relative;
+	width:100%;
+	text-align: center;
+	background-color:lighten($black, 5%);
+    span {
+        display:block;
+        //padding: $containerpadding;
+    }
+}
+
+.heart-guts-creativity {
+	width:100%;
+	li {
+        float:left;
+		color: $white;
+        width:33.33333333333333%;
+        &:nth-child(1) span {
+            background-color:lighten($black, 1%);
+        }
+
+        &:nth-child(2) span {
+            background-color:lighten($black, 10%);
+        }
+
+        &:nth-child(3) span {
+            background-color:lighten($black, 20%);
+        }
+        
+        a {
+                display:block;
+                color:$white;
+                text-transform: uppercase;
+                padding:$padding;
+                font-size:2em;
+                @include single-transition(all, .3s, ease, 0s);
+                &:hover {
+                    background-color: $black;
+                }
+        }
+
+        span {
+            display:block;
+            min-height:240px;
+            img {
+                padding: $padding*2 0px $padding 0px;
+            }
+            p {
+                font-size:1em;
+                padding: $padding;
+            }
+        }
+
+	}
+	//@extend %clearfix;
+}
+
+
+.work-with-passion {
+    position: relative;
+    width:100%;
+	height: 500px;
+    background-color: $black;// darken($halfwhite,10%);
+    @include single-transition(all, .3s, ease, 0s);
+    div {
+        
+    } 
+    @extend %clearfix;
+}
+
+.work-div {
+    position: absolute;
+    width: 100%;
+    min-height: 300px;
+    @include single-transition(all, .3s, ease, .1s);
+    p {
+        font-size:1.5em;
+    }
+}
+
+.work-div-normal-margin {
+    margin-top:30px;
+    margin-bottom:30px;
+    p {
+        color:$white;
+        line-height: 200%;
+    }
+}
+
+.worked {
+    position: relative;
+    width:33.33333333333333%;
+    float:left;
+    
+    a {
+        display:block;
+        font-size: 2em;
+        padding:$padding 0px $padding 0px;
+        background-color:darken($halfwhite, 15%);
+		@include single-transition(all, .3s, ease, .1s);
+        color: $white;
+        text-transform: uppercase;
+        &:hover {
+            background-color:darken($halfwhite, 25%);
+        }
+    }
+}
+
+.hexagon1, .hexagon2, .hexagon3 {
+    position: absolute;
+    width:100%;
+    height: 520px;
+    z-index: 0;
+    top:250px;
+    @include single-transition(all, .3s, ease-in, 0s);
+    background-image: image-url("hexagon.svg");
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    h1 {
+        font-size: 1.5em;
+        margin-top:5%;
+    }
+
+    p {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        font-size:1.1em;
+        margin-top:5%;
+        text-align:center;
+        line-height: 150%;
+        font-family: "SansationLightLightItalic";
+        color: lighten($white, 5%);
+       //opacity: 0.3;
+       
+       &:nth-child(1) {
+            background-color:red;
+       }
+
+       a {
+        padding:10px;
+       }
+    }
+
+    &:hover {
+        fill: #fce57e;
+        background-position: center 70px;
+    }
+ 
+}
+
+.btn-passion {
+    @extend %clearfix;
+    width:50%;
+    margin:0 auto;
+    background-color: lighten(#0E6D7A, 5%);
+    opcaity: 0.4;
+    
+    color: $white;
+    span {
+        font-size: 0.6em;
+        display:block;
+        padding:$padding/2 0px $padding/2 0px;
+    }
+    &:hover {
+        opacity: 1;
+        background-color: lighten(#0E6D7A, 20%);
+    }
+}
+
+.workimg1,.workimg2,.workimg3 {
+    margin-left:-150px;
+    margin-top:20px;
+    opacity:0.5;
+    @include single-transition(all, .3s, ease, .2s);
+}
+
+.img-cls {
+    opacity:1;
+    margin-left:0px;
+}
+
+.idea-div {
+    @extend %clearfix;
+    width:100%;
+    background-color:$black;
+    span {
+        display: block;
+        padding: $containerpadding;
+      
+        a {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @include single-transition(all, .3s, ease, 0s);
+
+        } 
+        a:hover { 
+            background-color: $black;
+            color:$white;
+        }
+    }
+    
+}
+
+footer {
+	@extend %clearfix;
+    position:relative;
+	width:100%;
+    color:darken($halfwhite, 35%);
+	background-color:$white;
+    text-align: center;
+    font-size:$XLFont;
+	
+    div {
+		@extend %clearfix;
+		background-color:$white;
+	}
+
+    ul {
+        display:block;
+        width:100%;
+        @extend %clearfix;
+    }
+
+    li {
+        float:left;
+        width:16.66666666666667%;
+		//border-top:1px solid darken($halfwhite, 20%);
+        @include single-transition(all, .3s, ease, 0s);
+        a {
+            img {
+                @include single-transition(opacity, .3s, ease, 0s);
+                opacity:0.5;
+            }
+            display:block;
+            color: darken($white, 25%);
+            padding:$linkpadding;
+            @include single-transition(background-color, .3s, ease, 0s);
+        }
+
+        &:nth-child(1) {
+            background-color:darken($twitter, 100%);//$twitter;
+            &:hover {
+                background-color: darken($twitter, 10%);
+            }
+        }
+
+        &:nth-child(2) {
+            background-color:darken($facebook, 100%);
+            &:hover {
+                background-color: darken($facebook, 10%);
+            }
+        }
+
+        &:nth-child(3) {
+            background-color:darken($googleplus, 100%);
+            &:hover {
+                background-color: darken($googleplus, 10%);
+            }
+        }
+
+        &:nth-child(4) {
+            background-color:darken($linkedin, 100%);
+            &:hover {
+                background-color: darken($linkedin, 10%);
+            }
+        }
+
+        &:nth-child(5) {
+            background-color:darken($behance, 100%);
+            &:hover {
+                background-color: darken($behance, 10%);
+            }
+        }
+
+        &:nth-child(6) {
+            background-color:darken($pinterest, 100%);
+            &:hover {
+                background-color: darken($pinterest, 10%);
+            }
+        }
+
+        &:hover {
+            img {
+                opacity:1;
+            }
+        }
+
+    }
+}
+
+
+
+
+.hexnor {
+    top:80px;   
+}
+
+
+.passion-of-work {
+    position: relative;
+    width:100%;
+    background-color: $black;//darken($halfwhite, 0%);
+    @extend %clearfix;
+}
+
+.half-width-1 {
+    float:left;
+    width:50%;
+    background-color:$white;
+    @include single-transition(all, .3s, ease, 0s);
+    border-right: 1px solid darken($halfwhite, 20%);
+	color: darken($halfwhite, 40%);
+	@include single-transition(all, .3s, ease, 0s);
+    span {
+        display: block;
+        margin-top:20px;
+        padding: $padding;
+        h1 {
+            font-size:2em;
+            text-transform: uppercase;
+			color: darken($halfwhite, 40%);
+        }
+
+
+        h2 {
+            text-transform: uppercase;
+            font-size:1.3em;
+            color: darken($halfwhite, 40%);
+        }
+        img {
+            opacity: 0.9;
+            @include single-transition(all, .3s, ease, 0s);
+        }
+
+        a {
+            padding:$linkpadding;
+        }
+    }
+    &:hover {
+        background-color:darken($halfwhite, 5%);
+		color: darken($halfwhite, 80%);
+        img {
+            opacity: 1;
+            transform: rotate(30deg);
+            -ms-transform: rotate(30deg); /* IE 9 */
+            -webkit-transform: rotate(30deg); /* Safari and Chrome */
+        }
+    }
+}
+
+.half-width-2 {
+    float:left;
+    width:49.8888%;
+    background-color:$white;
+    @include single-transition(all, .3s, ease, 0s);
+    color: darken($halfwhite, 40%);
+	@include single-transition(all, .3s, ease, 0s);
+	span {
+        display: block;
+        margin-top:20px;
+        padding: $padding;
+        h1 {
+            font-size:2em;
+            color: darken($halfwhite, 40%);
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size:1.3em;
+            color: $black;
+            text-transform: uppercase;
+			color: darken($halfwhite, 40%);
+        }
+        img {
+            opacity: 0.9;
+            @include single-transition(all, .3s, ease, 0s);
+        }
+
+        a {
+            padding:$linkpadding;
+        }
+    }
+    &:hover {
+        background-color:darken($halfwhite, 5%);
+		color: darken($halfwhite, 80%);
+        img {
+            transform: rotate(50deg);
+            -ms-transform: rotate(50deg); /* IE 9 */
+            -webkit-transform: rotate(50deg); /* Safari and Chrome */
+        }
+    }
+}
+
+.passion-heading {
+    h1 {
+        font-size: 2.4em;
+        padding:$padding;
+        text-transform: uppercase;
+		color: $white;//darken($halfwhite,55%);
+    }
+}
+
+.verticle-image-nav {
+    position: absolute;
+    right:20px;
+    top:20px;
+    nav {
+        ul {
+            li {
+                padding: $padding;
+                a {
+                   // padding:$padding;
+                    span {
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            -moz-border-radius: 20px;
+                            -webkit-border-radius: 20px;
+                            border-radius: 20px;
+                            border: 4px solid lighten($black, 30%);
+                        
+                        &:hover {
+                            background-color: darken($halfwhite, 20%);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.circle-bg-halfwhite-1, .circle-bg-halfwhite-2, .circle-bg-halfwhite-3, .circle-bg-halfwhite-4, .circle-bg-halfwhite-5 {
+    @include single-transition(all, .3s, ease, 0s);
+    background-color: darken($halfwhite, 10%);
+}
+
+.about-me {
+    position: relative;
+    @extend %clearfix;
+    width:100%;
+    background-color: $black; //$blackshade;//lighten($halfwhite, 5%);
+    border-bottom: 1px solid darken($halfwhite, 20%);
+    //border-top: 1px solid darken($halfwhite, 20%);
+    text-align:center;
+    h1 {
+        //text-transform: uppercase;
+        padding: $padding*2;
+        font-size:1.8em;
+        color:darken($halfwhite, 15%);
+        opacity: 0.4;
+        mark {
+            background-color: transparent;
+            color: lighten(#ff4234, 10%);
+            font-weight: 900;
+        }
+    }
+}
+
+.logo-holder {
+    width: 100%;
+    text-align:center;
+    margin-top:-260px;
+    @include single-transition(all, .3s, ease-in-out, 0s);
+    span {
+        display: block;
+        padding: $padding;
+        @include single-transition(all, .3s, ease-in-out, 0s);
+        background-color:darken($white, 0%);
+        hr {
+            border: 0px solid $blackshade;
+            opacity: 0.3;
+        }   
+
+        h1 {
+            margin-top:180px;
+            font-size: 2em;
+            color: lighten($black, 10%);
+            text-transform: uppercase;
+            opacity: 0.9;
+            @include single-transition(all, .3s, ease-in-out, 0s);
+        }
+
+        h2 {
+            font-size: 1em;
+            color: lighten($black, 10%);
+            text-transform: uppercase;
+            opacity: 0.9;
+            @include single-transition(all, .3s, ease-in-out, 0s);
+        }
+        img {
+            //margin-top:20px;
+            @include single-transition(all, .3s, ease-in-out, 0s);
+            opacity: 0.5;
+        }
+        &:hover {
+            margin-top:0px;
+            background-color:darken($halfwhite, 5%);
+            img {
+                opacity: 1;
+                //margin-top: 0px;
+            }   
+            h1, h2, hr {
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+.logo-holder-normal-margin {
+    margin-top:0px;
+    span {
+        background-color: $black;
+        &:hover {
+            background-color:$black;
+        }
+        opacity:1;
+        img {
+            opacity:1;
+        }
+        
+        h1, h2 {
+            color:$white;
+            opacity:1;
+            margin-top:10px;
+        }
+    } 
+}

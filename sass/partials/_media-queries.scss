@@ -1,0 +1,563 @@
+h1 {
+	@include MQ(XS) {
+		font-size: 2em;
+	}
+	@include MQ(S) {
+		font-size: 2em;
+	}
+	@include MQ(M) {
+		font-size: 3em;
+	}
+	@include MQ(L) {
+		font-size: 3em;
+	}
+}
+
+h2 {
+	@include MQ(XS) {
+		font-size: 1.3em;
+	}
+	@include MQ(S) {
+		font-size: 1.3em;
+	}
+	@include MQ(M) {
+		font-size: 2em;
+	}
+	@include MQ(L) {
+		font-size: 2em;
+	}
+}
+
+.main-links{
+	ul li {
+	
+
+	/*		@include MQ(XS) {
+				span {
+					display:none;
+				}
+			}
+			@include MQ(S) {
+				span {
+					display:none;
+				}
+			}
+			@include MQ(M) {
+				span {
+					display:none;
+				}
+			}
+			@include MQ(L) {
+				span {
+					display:none;
+				}
+			}
+
+
+
+		&:nth-child(1) {
+			@include MQ(XS) {
+				width:$XSWidth;
+				font-size: $XSFont;
+			}
+			@include MQ(S) {
+			span {
+				display:none;
+			}
+				width: $SWidth;
+				font-size: $SFont;
+			}
+			@include MQ(M) {
+
+				width: $MWidth;
+				font-size: $MFont;
+			}
+			@include MQ(L) {
+				width: $LWidth;
+				font-size: $LFont;
+			}
+		}
+		&:nth-child(2) {
+			@include MQ(XS) {
+				width:$XSWidth;
+				font-size: $XSFont;
+			}
+			@include MQ(S) {
+				width: $SWidth;
+				font-size: $SFont;
+			}
+			@include MQ(M) {
+				width: $MWidth;
+				font-size: $MFont;
+			}
+			@include MQ(L) {
+				width: $LWidth;
+				font-size: $LFont;
+			}
+		}
+		&:nth-child(3) {
+			@include MQ(XS) {
+				width:$XSWidth;
+				font-size: $XSFont;
+			}
+			@include MQ(S) {
+				width: $SWidth;
+				font-size: $SFont;
+			}
+			@include MQ(M) {
+				width: $MWidth;
+				font-size: $MFont;
+			}
+			@include MQ(L) {
+				width: $LWidth;
+				font-size: $LFont;
+			}
+		}
+		&:nth-child(4) {
+			@include MQ(XS) {
+				width:$XSWidth;
+				font-size: $XSFont;
+			}
+			@include MQ(S) {
+				width: $SWidth;
+				font-size: $SFont;
+			}
+			@include MQ(M) {
+				width: $MWidth;
+				font-size: $MFont;
+			}
+
+			@include MQ(L) {
+				width: $LWidth;
+				font-size: $LFont;
+			}
+		}
+		*/
+	}
+}
+
+
+
+.heart-guts-creativity {
+	@include single-transition(all, .3s, ease, 0s);
+	li {
+		&:nth-child(1), &:nth-child(2), &:nth-child(3) {
+			@include MQ(XS) {
+				width:100%;
+			}
+			@include MQ(S) {
+				width:100%;
+			}
+			@include MQ(M) {
+				width:33.33333333333333%;
+			}
+			@include MQ(L) {
+				width:33.33333333333333%;
+			}
+		}
+	}
+}
+
+footer {
+	 ul {
+        @include MQ(XS) {
+        		width:100%;
+		}
+		
+		@include MQ(S) {
+			width:100%;
+		}
+		
+		@include MQ(M) {
+			width:100%;
+		}
+		
+		@include MQ(L) {
+			width:100%;
+		}
+    }
+
+    li {
+    	&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+			@include MQ(XS) {
+				width:100%;
+			}
+			@include MQ(S) {
+				width:100%;
+			}
+			@include MQ(M) {
+				width:33.33333333333333%;
+			}
+			@include MQ(L) {
+				width:33.33333333333333%;
+			}
+		}
+    }
+}
+
+
+.stuff-holders {
+
+			@include MQ(XS) {
+				float:left;
+			}
+			@include MQ(S) {
+				float:left;
+			}
+			@include MQ(M) {
+				float:right;
+			}
+			@include MQ(L) {
+				float:right;
+			}
+
+	
+	/*div {
+		height:300px;
+		img {
+			@extend %clearfix;
+			margin-top:10px;
+		}
+		
+	}
+	h1 {
+		font-size: 1.5em;
+		a {
+			color:$white;
+			padding:10px;
+			background-color: lighten($pinkish, 5%);
+		}
+	}*/
+}
+
+.worked {
+		@include MQ(XS) {
+			width: 50%;
+		}
+		@include MQ(S) {
+			width: 50%;
+		}
+		@include MQ(M) {
+			width: 100%;
+		}
+		@include MQ(L) {
+			width: 100%;
+		}
+}
+
+.work-with-passion {
+	/*
+		@include MQ(XS) {
+			display:none;
+		}
+		@include MQ(S) {
+			display:none;
+		}
+		@include MQ(M) {
+			
+		}
+		@include MQ(L) {
+			display:none;
+		}
+	*/
+}
+
+.text-rotater {
+		@include MQ(XS) {
+			display:none;
+		}
+		@include MQ(S) {
+			display:none;
+		}
+		@include MQ(M) {
+			display:none;
+		}
+		@include MQ(L) {
+			
+		}
+}
+
+.half-width-1 {
+		@include MQ(XS) {
+			float:left;
+			width:100%;
+			border-bottom:1px solid darken($halfwhite, 40%);
+		}
+		@include MQ(S) {
+			float:left;
+			width:100%;
+			border-bottom:1px solid darken($halfwhite, 40%);
+		}
+		@include MQ(M) {
+			float:left;
+			width:100%;
+			border-bottom:1px solid darken($halfwhite, 40%);
+		}
+		@include MQ(L) {
+			float:left;
+			width:100%;
+		}
+}
+
+.half-width-2 {
+		@include MQ(XS) {
+			float:left;
+			width:100%;
+			border-bottom:1px solid darken($halfwhite, 40%);
+		}
+		@include MQ(S) {
+			float:left;
+			width:100%;
+			border-bottom:1px solid darken($halfwhite, 40%);
+		}
+		@include MQ(M) {
+			float:left;
+			width:100%;
+			border-bottom:1px solid darken($halfwhite, 40%);
+		}
+		@include MQ(L) {
+			float:left;
+			width:100%;
+		}
+}
+
+.tools-circle-area {
+	ul {
+		li {
+			@include MQ(XS) {
+				width: 100%;
+				border-bottom:1px solid darken($halfwhite, 40%);
+				&:nth-child(4) {
+					width:100%;
+					border-right: none;	
+				}
+			}
+			@include MQ(S) {
+				width: 100%;
+				border-bottom:1px solid darken($halfwhite, 40%);
+				&:nth-child(4) {
+					width:100%;
+					border-right: none;	
+				}
+			}
+			@include MQ(M) {
+				width: 100%;
+				border-bottom:1px solid darken($halfwhite, 40%);
+				&:nth-child(4) {
+					width:100%;
+					border-right: none;	
+				}
+			}
+			@include MQ(L) {
+				width: 49.88888%;
+				border-bottom:1px solid darken($halfwhite, 40%);
+				&:nth-child(4) {
+					width:49.88888%;
+					border-right: none;	
+				}
+			}
+		}
+	}
+}
+
+
+.experties-heading {
+	h1 {
+		@include MQ(XS) {
+			font-size: 1.5em;
+		}
+		@include MQ(S) {
+			font-size: 1.5em;
+		}
+		@include MQ(M) {
+			font-size: 2em;
+		}
+		@include MQ(L) {
+			font-size: 2.4em;
+		}
+	}
+}
+
+.passion-heading {
+	h1 {
+		@include MQ(XS) {
+			font-size: 1.5em;
+		}
+		@include MQ(S) {
+			font-size: 1.5em;
+		}
+		@include MQ(M) {
+			font-size: 2em;
+		}
+		@include MQ(L) {
+			font-size: 2.4em;
+		}
+	}
+}
+
+.pointer {
+		@include MQ(XS) {
+			top:58px;
+		}
+		@include MQ(S) {
+			top:58px;
+		}
+		@include MQ(M) {
+			top:65px;
+		}
+		@include MQ(L) {
+			top:75px;
+		}
+}
+
+
+.menu-handle {
+
+
+		@include MQ(XS) {
+			
+		}
+		@include MQ(S) {
+			
+		}
+		@include MQ(M) {
+			
+		}
+		@include MQ(L) {
+			
+		}
+}
+
+
+.services-div {
+	
+	h1 {
+		@include MQ(XS) {
+			font-size:1.5em;
+		}
+		@include MQ(S) {
+			font-size:1.5em;
+		}
+		@include MQ(M) {
+			font-size:1.5em;
+		}
+		@include MQ(L) {
+			font-size:1.3em;
+		}
+	}
+	
+	h2 {
+		@include MQ(XS) {
+			font-size:1em;
+		}
+		@include MQ(S) {
+			font-size:1em;
+		}
+		@include MQ(M) {
+			font-size:1em;
+		}
+		@include MQ(L) {
+			font-size:1.3em;
+		}
+	}
+	p {
+		@include MQ(XS) {
+			font-size:1em;
+		}
+		@include MQ(S) {
+			font-size:1em;
+		}
+		@include MQ(M) {
+			font-size:1em;
+		}
+		@include MQ(L) {
+			font-size:1.3em;
+		}
+	}
+}
+
+.services-list {
+	@extend %clearfix;
+	li {
+		@include MQ(XS) {
+			width: 100%;
+			img {
+				width:50%;
+				height:50%;
+			}
+		}
+		@include MQ(S) {
+			width: 100%;
+			img {
+				width:50%;
+				height:50%;
+			}
+		}
+		@include MQ(M) {
+			width: 100%;
+			img {
+				width:50%;
+				height:50%;
+			}
+		}
+		@include MQ(L) {
+			width:100%;
+			img {
+				width:50%;
+				height:50%;
+			}
+		}
+	}
+}
+
+
+.work-list {
+	li {
+
+		@include MQ(XS) {
+			width: 100%;
+		}
+
+		@include MQ(S) {
+			width: 100%;
+		}
+
+		@include MQ(M) {
+			float:left;
+			width: 50%;	
+		}
+
+		@include MQ(L) {
+			float:left;
+			width: 50%;
+		}
+
+	}
+}
+
+
+
+.new-work-list {
+	display: block;
+	@extend %clearfix;
+	li {
+
+			@include MQ(XS) {
+			width: 100%;
+		}
+
+		@include MQ(S) {
+			width: 100%;
+		}
+
+		@include MQ(M) {
+			float:left;
+			width: 50%;	
+		}
+
+		@include MQ(L) {
+			float:left;
+			width: 50%;
+		}
+	}
+}
